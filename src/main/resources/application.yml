@@ -4,3 +4,15 @@ spring:
   profiles:
     active: dev
     include: ops
+
+
+  rabbitmq:
+    host: 192.168.1.175
+    port: 5672
+    username: admin
+    password: 1qazxsw2
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: *

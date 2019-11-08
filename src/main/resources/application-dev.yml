@@ -15,8 +15,15 @@ spring:
   cloud:
     config:
       server:
+#        git:
+#          uri: https://github.com/iamkuaileshizhe/refuel-config-server.git    # 配置仓库路径
+#          default-label: master     # 配置仓库的分支
+#          username: huxinxue_01@163.com       # 访问git仓库的用户名
+#          password: hchy2019       # 访问git仓库的用户密码 如果Git仓库为公开仓库，可以不填写用户名和密码，如果是私有仓库需要填写
         git:
-          uri: https://github.com/iamkuaileshizhe/refuel-config-server.git    # 配置仓库路径
-          default-label: master     # 配置仓库的分支
-          username: huxinxue_01@163.com       # 访问git仓库的用户名
-          password: hchy2019       # 访问git仓库的用户密码 如果Git仓库为公开仓库，可以不填写用户名和密码，如果是私有仓库需要填写
+          default-label: master
+          uri: http://192.168.1.175:10080/kuaileshizhe/test.git
+          username: hchy@126.com
+          password: hchy2019
+
+#使用gitlib进行内部配置文件的管理并进行持续集成 也是一个不错的解决方案  也可以用gitlib进行内部版本管理
